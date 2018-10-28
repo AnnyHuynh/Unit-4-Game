@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <title>Unit-4-Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+</head>
+<body>
+ <div class = "container" id="main-container">
+  <h1>CrystalsCollector</h1>
+  <div class = "row" id="instruction">
+    You will be given a random number at the start of the game. 
+    There are four crystals below. 
+    <br>
+    By clicking on a crystal you will add a specific amount of points to your total score. 
+    <br>
+    You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. 
+    <br>
+    The value of each crystal is hidden from you until you click on it.
+    <br>
+    Each time when the game starts, the game will change the value of each crystal .
+    <br>
+    <h2>Let's get started!</h2>
+
+  </div>
+
+  <div class="row" id="calculation">
+    <div class="col-4" id="computer-number"></div>
+    <div class="col-4" id="total">Your Total Score Is: </div>
+    <div class="col-4" id="result">
+      <h3 id="win">Win: </h3>
+      <h3 id="loses">Loses: </h3>
+    </div>
+  </div>
+  
+  <ul  class = "row" id = "image-container">
+    <li class="col-3"> <img src="assets/images/Red-Crystal.jpg" id="red" class="img-fluid crystal" alt="Responsive image"> </li>
+    <br>
+    <li class="col-3"> <img src="assets/images/Blue-Crystal.jpg" class="img-fluid crystal" id="blue" alt="Responsive image"> </li>
+    <br>
+    <li class="col-3"> <img src="assets/images/Purple-Crystal.jpg" class="img-fluid crystal" id="purple" alt="Responsive image"> </li>
+    <br>
+    <li class = "col-3"> <img src="assets/images/Gold-Crystal.jpg" class="img-fluid crystal" id="gold" alt="Responsive image"> </li>
+
+  </ul>
+</div>
+
+
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
